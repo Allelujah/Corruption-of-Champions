@@ -423,18 +423,18 @@ package classes.Scenes.Areas.Swamp
 			spriteSelect(77);
 			outputText("", true);
 			outputText("Your eyes lower towards the drider-woman's thick, demonic shaft lying exposed to your wicked intention.  Easing yourself over to the defeated arachnid, you slowly reach out and squeeze her pained member, a quiet, unwanted moan escaping from between her soft lips.  Gently caressing her length, you make sure to trace your fingers around every bump and curve of the corrupted tool that throbs heatedly in your palm, using your thumb to apply pressure underneath her growing cock.  The drider lies fully erect in no time at all, and you respond by hastily jerking her pride before relinquishing your grip and moving away from your new toy.  Any reluctance she may have held before has vanished with your gratuitous touch, the exhausted spider-lady now humping aimlessly at the air in an attempt to relieve herself - using her trembling hands to fondle her breasts while whining pathetically at her lack of sexual gratification.  An idea sparks in your head - you figure it'd be more satisfying to watch the spidertaur squirm than to give her relief straight away.\n\n", false);
-			outputText("Avoiding the desperate drider's spindly legs, you walk around to grab onto her limp torso, pulling it over until she lands on her back with her lewd figure in full display.  The girl pauses hesitantly, cupping one of her heaving tits in her hand while placing a finger to her lips with the other as she waits for you to make your move - in her current state, it's unlikely she can retaliate even if she wanted to.  The drider's corrupted cock twitches with excitement, a thick rod standing tall amidst the collapsed heap of its owner.  A bead of pre-cum oozes from the tip as evidence of your quick work, reminding you it would be rude to leave the job unfinished.  Swaying your " + hipDescript() + " enticingly, you move slowly down towards her lower torso, reaching over and propping yourself on top of the spider-woman with your " + assDescript() + " pressing against her slick devil-dick.  You look into her eager eyes, the aroused pet almost screaming for relief with her pained stare and the equally responsive cock grinding along your " + assholeDescript() + ".  Reaching behind you, you grab the base of her member and pull, eliciting a yelp and an involuntary thrust from your victim that almost forces her tip inside.  It misses, however, and instead slips out in front of you, the nubs of her cock pushing along your " + cockDescript(0) + ".  You stifle a moan - she'll pay for that.\n\n", false);
-
-			outputText("Holding on to the top portion of the drider's thick member, you squeeze her in between your upper legs, pressing the demonic dong against your " + assholeDescript() + " and inner thighs, both hot with desire.  Sliding upwards, you begin to bounce on top of the drider in a cowgirl-like position, grinding against her length while your " + buttDescript() + " slaps against her soaking pussy with every downward thrust.  The arachnid-morph convulses and moans along with your movements, unable to handle the feeling of your warmth against her heated member and the expertise of your hands fondling her tip, your fingers soaked with her leaking pre.  Riding your new pet victoriously, you make sure that the spider-woman can't escape the confines of your " + hipDescript() + ".\n\n", false);
-
-			outputText("The drider's shaft begins to grow underneath your fingers, the slick head pulsing with the need to release into your palms.  You decide to lay still, driving your pet insane as she tries to thrust in between your thighs for a chance to ejaculate.  Before she can, however, you grab the base of her studded cock and squeeze firmly, a gasp of both pain and pleasure escaping from the arachnid's lips.  You inform the trembling plaything that if she wants an opportunity to release she'll have to make you do so first, otherwise - you grip harder - you'll beat her down again.  The busty spidertaur nods timidly, to which you respond with an eager grin.  She eyes you up as you position yourself above her bulbous member, giving it one last playful slap before slamming yourself down and taking as much of it as you can.\n\n", false);
-
-			outputText("A moan escapes your lips as her nine-inch pleasure-rod ", false);
-			if (player.analCapacity() < monster.cockArea(0)) outputText("bottoms out", false);
-			else if (player.analCapacity() < monster.cockArea(0) * 2) outputText("fits tightly", false);
-			else outputText("barely reaches halfway", false);
-			outputText(" inside of you", false);
-			player.buttChange(30, true, true, false);
+			outputText("Avoiding the desperate drider's spindly legs, you walk around to grab onto her limp torso, pulling it over until she lands on her back with her lewd figure in full display.  The girl pauses hesitantly, cupping one of her heaving tits in her hand while placing a finger to her lips with the other as she waits for you to make your move - in her current state, it's unlikely she can retaliate even if she wanted to.  The drider's corrupted cock twitches with excitement, a thick rod standing tall amidst the collapsed heap of its owner.  A bead of pre-cum oozes from the tip as evidence of your quick work, reminding you it would be rude to leave the job unfinished.  Swaying your " + hipDescript() + " enticingly, you move slowly down towards her lower torso, reaching over and propping yourself on top of the spider-woman with your " + assDescript() + " pressing against her slick devil-dick.  You look into her eager eyes, the aroused pet almost screaming for relief with her pained stare and the equally responsive cock slowly grinding along the cleft of your ass. You feel the tiny nubs of her demonic cock rub along your eager asshole, pre-cum lubricating your hot entrance as she moans in unrequited pleasure.  Reaching behind you, you grab the base of her member and pull, eliciting a yelp and an involuntary thrust from your victim that almost forces her tip inside.\n\n", false);
+			outputText("Holding on to the top portion of the drider's thick member, you squeeze her in between your upper legs, pressing the demonic dong against your " + assholeDescript() + " and " + assDescript() + ", both hot with desire.  Sliding upwards, you begin to bounce on top of the drider in a cowgirl-like position, grinding against her length while your", false);
+                        if (player.balls > 0) outputText(ballsDescriptLight(), false);
+                        else if (player.hasVagina()) outputText(vaginaDescript(0), false);
+                        else outputText("taint", false);
+                        outputText(" slaps against her soaking pussy with every downward thrust.  The arachnid-morph convulses and moans along with your movements, unable to handle the feeling of your cheeks against her heated member and the expertise of your hands fondling her tip, your fingers soaked with her leaking pre.  Riding your new pet victoriously, you make sure that the spider-woman can't escape the confines of your " + hipDescript() + ".\n\n", false);
+			outputText("The drider's shaft begins to grow underneath your fingers, the slick head pulsing with the need to release into your palms.  You decide to lay still, driving your pet insane as she tries to thrust in between your " + assDescript() + " for a chance to ejaculate.  Before she can, however, you grab the base of her studded cock and squeeze firmly, a gasp of both pain and pleasure escaping from the arachnid's lips.  You inform the trembling plaything that if she wants an opportunity to release she'll have to make you do so first, otherwise - you grip harder - you'll beat her down again.  The busty spidertaur nods timidly, to which you respond with an eager grin.  She eyes you up as you position yourself above her bulbous member, giving it one last playful slap before slowly easing yourself down and taking as much of it as you can.\n\n", false);
+			outputText("A moan escapes your lips as inch by inch, the bumps and curves of her nine-inch demonic dick massage your puckered hole as it slides further in ", false);
+			if (player.analCapacity() < monster.cockArea(0)) outputText("with surprising ease", false);
+			else if (player.analCapacity() < monster.cockArea(0) * 2) outputText("slowly but surely", false);
+			else outputText("painfully", false);
+			player.buttChange(monster.cockArea(0), true, true, false);
 			if (player.hasCock()) outputText(", nearly crushing your prostate from the tight squeeze", false);
 			outputText(".  ", false);
 			if (!player.hasCock() && player.hasVagina()) outputText("You gasp and dribble a few strands of girl-goo, the contractions of your achingly empty pussy intensifying.  ", false);
@@ -443,26 +443,41 @@ package classes.Scenes.Areas.Swamp
 			if (player.hasCock()) outputText("while your " + multiCockDescriptLight() + " dribbles white, wasted goo onto the black and " + monster.hairColor + " striped carapace below and  your fingers tweak your " + nippleDescript(0) + "s and your starved sphincter sucks at its slimy, squirming stuffing", false);
 			else if (player.hasVagina()) outputText("while your " + vaginaDescript(0) + " dribbles fem-slime onto the black and " + monster.hairColor + " striped carapace below", false);
 			else outputText("while your fingers tweak your " + nippleDescript(0) + "s and your starved sphincter sucks at its slimy, squirming stuffing", false);
-			outputText(".  You lean down, straddling her sides and reaching over to plant a kiss on one of the spider-woman's ", false);
-			if (monster.nipplesPierced > 0) outputText("pierced nipples, circling the metallic stud", false);
-			else outputText("nipples, circling the moist bud", false);
-			outputText(" with your tongue", false);
-			if (player.tongueType > TONUGE_HUMAN) outputText(" as the rest of its demonic length lashes out and wraps around her pillowy bosom", false);
-			if (player.hasCock()) {
-				outputText(".  The warm organ brushes past your prostate, the slippery caress making " + sMultiCockDesc() + " dribble a ", false);
+			outputText(".  Shivering, you glance back up at the defeated woman; she has a passionate, prideful look plastered on her face, though it seems to waver each time another inch of her cock pushes past your stretched-out ring.  The drider has no choice but to satisfy your hunger, groping your " + assDescript() + " with her hands. You begin to roll your hips, allowing the demon-cock inside of you to grind against your inner walls with every bump protruding from its dark body.  The spider-woman bites her bottom lip as she forces herself not to paint your " + assholeDescript() + " with her fervent seed.", false);
+                        if (player.hasCock()) {
+				outputText("  The warm organ brushes past your prostate, the slippery caress making " + sMultiCockDesc() + " dribble a ", false);
 				if (player.cumQ() < 500) outputText("drop", false);
 				else outputText("stream", false);
 				outputText(" of pre-cum down its length", false);
 			}
-			
-			outputText(".  With your free hand you massage one of her top breasts, your forearm pressing against the one below it.  The drider has no choice but to satisfy your hunger for her motherly tits, holding the back of your head with her hard gloved hand and groping your " + assDescript() + " with the other.  You begin to gyrate your hips in a sideways motion, allowing the demon-cock inside of you to grind against your inner walls with every bump protruding from its dark body.  The spider-woman bites her bottom lip as she forces herself not to paint your " + assholeDescript() + " with her fervent seed.  You take your time switching through various techniques, slapping your butt against her groin or tightening your muscles against her thickness. Each advance is met with her lustful thrusting, the spider's cock pumping in and out in accordance to your own hip movements.  The slick juices of her cunt mix with yours, and you dwell in the pleasure of your " + assholeDescript() + " filled with her own hot sex.\n\n", false);
-
-			outputText("You begin to feel yourself coming to a climax, increasing your movements and forcing the drider-woman to pump faster inside of you.  Lurching back, you drive yourself into the arachnid's crotch, her fat, demonic cock squeezing itself against your gripping walls.  Unable to take the pressure, your plaything explodes inside of you, hot white seed splattering against your inner walls and slowly oozing outside with every thrust.  You grind yourself against the spunk-machine forced inside, your orgasm causing you to shudder in pleasure along with her.  In the fullness of your vagina and time, you lay flat against her exhausted figure, your hips still squeezing the last few remaining drops of spooge left drooling from the spider's tip.  You figure it wouldn't hurt to lay still for another few hours, comfortable against the soft, plush curves of your new mate.", false);
+                        outputText(" You bounce against her crotch, your ", false);
+                        if (player.balls > 0) outputText(ballsDescriptLight(), false);
+                        else if (player.hasVagina()) outputText(vaginaDescript(0), false);
+                        else outputText("taint", false);
+                        outputText(" slapping against her slavering cunt. You take your time riding her, slapping your butt against her groin or tightening your muscles against her thickness. Each advance is met with her lustful thrusting, the spider's cock pumping in and out in accordance to your own hip movements.  You lose yourself in the pleasure of your " + assholeDescript() + " filled with her hot sex.\n\n", false);
+			outputText("You begin to feel yourself coming to a climax, increasing your movements and forcing the drider-woman to pump faster inside of you.  Lurching back, you drive yourself into the arachnid's crotch, her fat, demonic cock squeezing itself against your gripping walls", false);
+                        if (player.hasCock()) outputText(" and milk your prostate as it pushes deep", false);
+			outputText(".\n\n", false);
+			outputText("The stimulation of her thick, bulbous member forced into your sphincter sets off", false);
+			if (player.gender > 0) {
+				outputText(", simultaneously, ", false);
+				if (player.hasCock()) {
+					outputText("a storm of semen-squirting spurts from your shaft", false);
+					if (player.cockTotal() > 1) outputText("s", false);
+				}
+				else if (player.hasVagina()) outputText("a siege of spray-scattering spasms from your snatch", false);
+				outputText(" and", false);
+			}
+			outputText("  your plaything explodes inside of you, hot white seed splattering against your inner walls and slowly oozing outside with every thrust. While you shriek, squirm and shiver shamelessly, you see the spider-slut suspended in the same, similarly a slave to the sensation of slamming her spunk-machine into your  " + assholeDescript() + "  while bursts of lady-cream erupt from her sloppy spider-cunt.\n\n", false);
+                        outputText("Still in the aftershocks of your orgasm, your muscles go limp, leaving you lay flat against her exhausted figure, your hips still squeezing the last few remaining drops of spooge left drooling from the spider's tip. You figure it wouldn't hurt to lay still for another few hours, comfortable against the soft, plush curves of your new mate.", false);
 			player.slimeFeed();
 			player.orgasm();
-			dynStats("cor", .5);
+			dynStats("sen", 1, "cor", .5);
 			cleanupAfterCombat();
 		}
+
+
+
 
 
 //*Victory Rape: Ride Ovi Anal sex-insenitive (done)
