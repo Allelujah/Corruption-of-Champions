@@ -1093,5 +1093,105 @@ private function getMinoHawtDawged():void {
 	minoCumAddiction(5);
 	cleanupAfterCombat();
 }
+
+
+
+
+
+
+
+//random loss buttfuck
+private function getMinoFuckedHard():void {
+	clearOutput();
+	if(player.lust > 99) {
+		outputText("You collapse to your knees, hands racing to your crotch and your ");
+		//(If Male or Herm: 
+		if(player.hasCock()) outputText("[cock biggest], which you frantically try to stroke and rub through your [armor], its throbbing arousal clearly evident.");
+		//If Herm: 
+		if(player.gender == 3) outputText("  Your other hand races to your ");
+		//(If Female or Herm: 
+		if(player.hasVagina()) outputText("[vagina], which is dripping and drooling your arousal down the insides of your [armor].  You manage to apply some pressure to your [clit] through your [armor], which sends a shock of pleasure through you.");
+	}
+	//If PC lost by damage, and Minotaur has axe: 
+	else if(monster.weaponName == "axe") outputText("The last great blow from the Minotaur's giant, man-slaughtering axe is just a little off, thankfully - the flat of the axe, rather than the blade, hits you upside the flat of your head, sending you tumbling into the dirt.");
+	//(If PC lost by damage, and Minotaur does not:
+	else outputText("The last great blow from the Minotaur's giant, beefy fist hits you upside your head, the blow strong enough to send you tumbling into the dirt.\n\n", false);
+	
+	outputText("Exhausted, you fall to your knees in front of the minotaur, the thick smells of his musk burning in your nostrils,", false);
+	if(player.hasCock()) outputText("your " + multiCockDescriptLight() + " are throbbing at full attention, dribbling precum onto the cavern floor,", false);
+	if(player.hasVagina()) outputText("your " + VaginaDescript(0) + " leaking juices through your " + player.armorName + " and down your thigh,", false);
+        if(player.biggestLactation() > 1.5) outputText(" your " + allnippleDescript() + " leaking milk into the front of your " + player.armorName + ".", false);
+	outputText("Grinning, the minotaur picks you up off the floor, bending you over a nearby rock. You feel his large hands roughly grip your " + buttDescript() + " cheeks, spreading them wide, making you gasp as you feel the cold air of the cavern against your " + assholeDescript() + ". The minotaur must have decided to taste his latest capture, for you hear rustling as he leans closer, and you feel his hot moist breath on your aching behind as he exhales. You feel his huge, broad tongue slip up between your crack, as he slowly laps at your " + assholeDescript() + ".\n\n", false);
+	if(player.cor < 30) outputText(" You can't help but", false);
+	if(player.cor >= 30) outputText(" You happily moan", false);
+	outputText(" as the rough texture of his tongue tugs at your " + assholeDescript() + ", leaving it slippery and slick with thick minotaur spit. Then, he presses the tip of his tongue against your " + assholeDescript() + ", ", false);
+        //Too tight!
+	if(player.analCapacity() < monster.cockArea(0)) outputText("building up pressure, until his tongue finally slides inside you. ", false);
+	else outputText("easily sliding it into your depths. ", false);
+	outputText("You quiver as he shoves his tongue deeper into you, it's much thicker than any human's tongue, and to your surprise much longer, as you feel the wet wriggling tongue slip deeper into your " + assholeDescript() + ", stretching you out along the girth of his tongue. The minotaur obviously decides he enjoys the taste of your insides, as he wriggles and thrusts his tongue deep inside you, sliding it back and forth, leaving your insides slick and coated with his spit. After what feels like ages of the minotaur greedily eating out your " + assholeDescript() + ", he finally, slowly tugs his tongue out of your ass, his hands still spreading your " + buttDescript() + "wide. ", false);
+        if(player.analCapacity() >= monster.cockArea(0)) outputText("You let out a yelp as the cold cavern air finds its way into your gaping depths, turning the minotaur's spit that coats your insides cold.", false);
+	if(player.analCapacity() < monster.cockArea(0)) outputText("You groan, a little disappointed", false);
+	if(player.cor < 30) outputText(" despite yourself,", false);
+	outputText(" as you find yourself missing the feeling of being stretched and stuffed full of writhing, warm, minotaur tongue.\n\n", false);
+	outputText("The minotaur slides his " + eCockDescript(1) + " between your spread " + buttDescript() + " cheeks, hot-dogging your", false);
+	if(player.cor >= 30) outputText(" slutty", false);
+	outputText(" " + buttDescript() + ". You feel the girth of his " + eCockDescript(1) + " as he dry humps your sloppy " + buttDescript() + ", drooling thick dollops of pre onto the small of your back.", false);
+        if(player.cor < 30) {
+             outputText("Terror sinks into your heart as the feel of his " + eCockDescript(1) + " thrusting between your cheeks is enough to tell you his " + eCockDescript(1) + " will surely rip you apart if he tries to squeeze it into your " + assholeDescript() + ". Despite your fear, of perhaps because of it,", false);
+	     if(player.hasCock()) outputText("your " + multiCockDescriptLight() + " are rock solid against your belly, eagerly oozing copious amounts of precum onto the rock,", false);
+	     if(player.hasVagina()) outputText("your VaginaDescript(0) is soaked, you feel your juices dripping down your thigh, even reaching your feet and toes before dripping off onto the cavern floor,", false);
+             if(player.biggestLactation() > 1.5) outputText(" your " + allnippleDescript() + " leak milk all over the rock as they pressed hard against it.", false);
+	     outputText("The minotaur pulls back, and you pray that he has lost interest, but you are quickly proven wrong when you feel the tip of his " + eCockDescript(1) + "  pressing against your " + assholeDescript() + ".", false);
+	     outputText("You feel pressure building against your ass as the minotaur presses forward with his hips,", false);
+	     if(player.analCapacity() < monster.cockArea(0)) outputText(" before suddenly his thick cock manages to force its way past your " + assholeDescript() + ", a few inches instantly sinking into your ass.", false);
+	     else outputText(" and his cock slowly sinks into your " + assholeDescript() + ", surprising even you with how wide his " + eCockDescript(1) + " stretches you out.", false);
+	     outputText("Despite how thick the minotaur's tongue was, and despite how long he fucked your needy hole with it, you are nowhere near prepared for the enormous girth of his " + eCockDescript(1) + ",", false);
+	     if(player.analCapacity() < monster.cockArea(0))	outputText("and you let out a scream as his " + eCockDescript(1) + " stretches you wide.", false);
+	     else outputText(" and you squirm as it pushes the boundaries of your " + assholeDescript() + ".", false);
+	}
+	else 
+	{
+	        outputText("You heart beats faster as you feel the minotaur's enormous girth between your " + buttDescript() + " cheeks, longing to have your " + assholeDescript() + " stretched around such thick throbbing meat.", false);
+	        if(player.hasCock()) outputText("Your " + multiCockDescriptLight() + " are rock solid against your belly, eagerly oozing copious amounts of precum onto the rock,", false);
+	        if(player.hasVagina()) outputText("your " + VaginaDescript(0) + " is soaked, you feel your juices dripping down your thigh, even reaching your feet and toes before dripping off onto the cavern floor,", false);
+                if(player.biggestLactation() > 1.5) outputText(" your " + allBreastsDescript() + " leak milk", false);
+	        outputText("In anticipation. As the minotaur pulls back, you know he's finally getting ready to give you what you want so badly. You do your best to arch your back, wiggling your " + buttDescript() + ", practically begging the minotaur to fuck your needy behind. After what feels like ages of waiting, the minotaur finally presses his flared cockhead against your " + assholeDescript() + ". You feel pressure building as he presses forward with his hips, until", false);
+	        if(player.analCapacity() < monster.cockArea(0)) outputText("Finally his " + eCockDescript(1) + " forces its way inside your " + assholeDescript() + ", a few inches almost instantly sinking inside you.", false);
+	        else outputText("His " + eCockDescript(1) + " sinks into your slutty " + assholeDescript() + ", stretching you out wide as he forces inch after throbbing inch inside you.", false);
+(if PC has hair long enough to be grabbed)
+	        outputText("The minotaur wraps his hand in your " + hairDescript() + ", tugging hard as he forces more of his " + eCockDescript(1) + " into your " + assholeDescript() + ".", false);
+	        outputText("You feel his " + eCockDescript(1) + " throbbing deep down inside of you, it feels so far inside you, yet to your amazement it slides in even further. The minotaur grips your " + hipDescript() + " as he slowly forces his " + eCockDescript(1) + " deeper and deeper into your " + assholeDescript() + ", as you feel the huge cock pressing its way into your tummy. Eventually, ", false);
+	        if(player.analCapacity() < monster.cockArea(0)) outputText(" by some kind of magic,", false);
+	 	outputText("the bull-man manages to force the last few thick throbbing inches of his " + eCockDescript(1) + " into your " + assholeDescript() + " ", false);
+	        if(player.analCapacity() < monster.cockArea(0)) outputText(" without ripping you in two", false);
+	        outputText(". You can feel his " + eCockDescript(1) + " so deep inside you that you would swear it's almost in your chest. He slowly starts to tug the " + eCockDescript(1) + " out of your ass,", false);
+	        if(player.analCapacity() < monster.cockArea(0)) outputText("as you have no choice but to clench down hard on the thick protrusion stretching your " + assholeDescript() + " out,", false);
+	        outputText("Your eyes rolling back in pleasure as you feel his " + eCockDescript(1) + " tugging at the slippery depths of your " + assholeDescript() + ",", false);
+        }
+	outputText("before he quickly slams back into your ass,", false);
+	if(player.balls > 0) outputText("His " + eBallsDescriptLight() + " slapping wetly against your " + ballsDescriptLight() + ", and", false);
+	outputText("His " + eCockDescript(1) + " churning your insides, smearing them with thick minotaur precum as he does. He repeats the slow process of tugging his " + eCockDescript(1) + " out of your ", false);
+        if(player.analCapacity() < monster.cockArea(0)) outputText("poor, tight", false); 
+	outputText(" " + assholeDescript() + ",", false);
+	if(player.cor >= 30) outputText("Making your toes curl as you moan and gasp like a needy slut,", false);
+	outputText("Only to slam his " + eCockDescript(1) + " back into you harder and faster as time goes by. After what feels like ", false);
+	if(player.cor >= 30) outputText("blissful ",false);
+	outputText("hours of the bull-man ruthlessly you, you feel him grip down on your " + hipDescript() + " even tighter, and he slams you even harder than before. Suddenly, he buries his " + eCockDescript(1) + " as deep as possible in your depths, holding it there as he lets out a loud moo from above you. You feel his " + eCockDescript(1) + " erupt, pumping hot thick cow cum deep into your " + assholeDescript() + ". You can feel his thick cum filling you up and settling into a thick sticky pool deep inside you.", false);
+	if(player.cor >= 30) outputText("Despite your inhibitions, The feel of his thick hot cum oozing into your depths pushes you over the edge,", false);
+	else outputText("You groan loudly and your eyes roll back in pleasure, your toes curling hard, as you feel his thick hot cum oozing into your depths, stuffing you full,", false);
+	if(player.hasCock()) outputText("causing your " + multiCockDescriptLight() + " to spurt,", false);
+	if(player.hasVagina()) outputText("your " + VaginaDescript(0) + " gushes lusty fluids down your thighs and onto the floor,", false);
+        if(player.biggestLactation() > 1.5) outputText(" your " + allBreastsDescript() + " gush hot milk,", false);
+	outputText(" and you make a mess of yourself. Spent, the cow-man slowly begins to tug his " + eCockDescript(1) + " out of your ass, inch by inch, before the flared head finally slips out of your " + assholeDescript() + " with a loud, wet, sloppy pop. You feel your " + assholeDescript() + " gaping wide, and you feel the cold air rush inside you yet again, as the bull's excess cum rapidly leaks out of your gaping ass, despite how thick and sticky it feels running down your", false);
+	if(player.balls > 0) outputText(" his " + eBallsDescriptLight() + " and your", false)
+	outputText(" thighs. You", false);
+	if(player.cor >= 30) outputText(" happily", false);
+	outputText(" pass out with your " + assholeDescript() + " still stretched wide, the minotaur's cum still seeping out of you as you sleep.", false);
+	//{Loss message 'when you wake up you'll be missing gems' blah blah}
+	player.slimeFeed();
+	player.orgasm();
+	minoCumAddiction(5);
+	cleanupAfterCombat();
+}
 }
 }
