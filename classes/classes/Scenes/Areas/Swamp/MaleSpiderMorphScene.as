@@ -60,7 +60,9 @@ package classes.Scenes.Areas.Swamp
 			var mount:Function =null;
 			var buttfuck:Function =null;
 			var frot:Function =null;
+			var ride:Function =null;
 			if (player.hasVagina()) mount = victoryCowgirlRidingOnSpiderBoi;
+			if (!player.hasVagina()) ride = victoryAssRideOnSpiderBoi;
 			if (player.hasCock()) {
 				if (player.cockThatFits(monster.analCapacity()) != -1) buttfuck = victoryButtFuck;
 				if (player.biggestCockArea() > monster.analCapacity()) frot = victoryFrotTheSpoidah;
@@ -73,7 +75,7 @@ package classes.Scenes.Areas.Swamp
 			if (player.gender > 0 && player.lust >= 33) {
 				outputText("\n\nWhat do you do?", false);
 				//[CHOICES]
-				simpleChoices("Mount", mount, "FuckHisButt", buttfuck, "Frot", frot, "B.Titfuck", bikiniTits, "Leave", cleanupAfterCombat);
+				simpleChoices("Mount", mount, "Ride his cock", ride, "FuckHisButt", buttfuck, "Frot", frot, "B.Titfuck", bikiniTits, "Leave", cleanupAfterCombat);
 			}
 			else cleanupAfterCombat();
 		}
@@ -242,6 +244,48 @@ package classes.Scenes.Areas.Swamp
 			player.slimeFeed();
 			//Pregnancy Goes Here
 			player.knockUp(PregnancyStore.PREGNANCY_SPIDER, PregnancyStore.INCUBATION_SPIDER, 151);
+			player.orgasm();
+			cleanupAfterCombat();
+		}
+		
+		
+//*Victory Ride  his thick cock		
+private function victoryAssRideOnSpiderBoi():void
+		{
+			//*Summary: Throw him on his back and mount up on that throbbing, ebon piece of uncut spidercock as he looks to you meekly, panting, needing something to tend to his foreskinned dick so badly...
+			outputText("", true);
+			spriteSelect(74);
+			outputText("You hastily remove your " + player.armorName + " to bare yourself in preparation for the coming pleasure, your " + SMultiCockDesc() + " bounces atop your belly, reacting strongly to the tingling sensation radiating from your " + assholeDescript() + ".  Throughout it all, the spider-boy doesn't react.  He's too busy ", false);
+			if (monster.HP < 1) outputText("trying to stay upright", false);
+			else outputText("trying to drown himself in pleasure", false);
+			outputText(" to summon a response.  How irritating.  You push him over with your " + player.foot() + " to roll him onto his back, giving you the access you need to get at his ", false);
+			if (monster.HP < 1) outputText("dripping dick", false);
+			else outputText("gradually stiffening dick", false);
+			outputText(".  Gently exploring his body, you run your hands over his chest, circle his tight, stiff nipples, and slide all ten fingers down his smooth skin toward his loins.  The effect of your touches soon becomes apparent, ", false);
+			if (monster.HP < 1) outputText("resulting in a stiff, pre-cum-dripping spider-cock.", false)
+			else outputText("resulting in the spider-cock's hood of excess, sensitive flesh overfilling with sticky, musky pre-cum.", false);
+			outputText("\n\n", false);
+			outputText("The arachnid male looks up at you with wide, open eyes and a lusty expression, begging with his eyes for you to take his slippery black cock inside you.  Lucky for him, that's exactly what you have planned.  You mount the male spider's lithe body with a smooth, sensuous motion, ", false);
+			outputText("placing your " + assDescript() + " atop the floppy, folded skin that obscures his cockhead.  Reaching back you spread your cheeks and guide that delicious, hot cock into your" + assholeDescript() + ".\n\n", false);
+                        outputText("The penetration is ", false);
+			if (player.analCapacity() < 40) outputText("mercifully easy due to the mess of pre-cum and the forgiving foreskin that clings to his shaft.  It rolls further and further back as he pushes in until his glans is exposed to your clenching guts.", false);
+			else if (player.analCapacity() >= 40) outputText("quite easy due to how well-stretched your " + assholeDescript() + " is.  Feeling his fat little cock slide into your roomy backside actually brings a smile to your lips.", false);
+			else if (player.analWetness() >3) outputText("quite easy due to your natural lube, making you moan at the sensation of being stretched and filled with his fat cock.  You can feel him swelling further from the stimulation, his twitching cock trying to stuff you as effectively as possible.", false);			player.buttChange(monster.cockArea(0), true, true, false);
+			outputText(" Grinning at the shocked expression of your prey, you savor the feel of his monstrous shaft slowly sliding deep inside, giving yourself time to accommodate his length and girth.\n\n", false);
+			outputText("You pinch the arachnid male's nipple as you begin to move in torturously slow motion.  Each lewd slap of your " + buttDescript() + " on his groin is accompanied by a rippling spasm of pleasure in your " + assholeDescript() + ", inadvertantly milking the thick-skinned member with the muscular spasms.  He moans and begins trying to lift his hips to meet you.  You deny him, slamming your body down harder with every downward motion to crush him back into the moist swamp-earth.\n\n", false);
+			outputText("\"<i>Ungh... uh... c-c-coming!</i>\" whines the spider-morph, trembling underneath you.  His cock squirts and dumps its inhuman seed into your innermost depths.  Squishing wetly, you can feel pump after pump of the thick spooge being forced deep inside your bowels.  The male finishes his climax and sags down into the loam, panting.  Reaching down, you give him an irritated slap.  Your victim's dick actually starts wilting inside you while you ride him, spooge slopping past your anus with each thrust.  The nerve of some men!\n\n", false);
+			outputText("An idea comes to you while you try to get off on the limp-dicked man, and you decide to act on it immediately.  Grabbing his head in both hands, you push the spider-boy's head against his shoulder and command, \"<i>Bite.</i>\"  He fights against you, but he's too weak from the recent combat, not to mention orgasm, to put up much of a fight.  All too soon he's letting his fangs slip into his shoulder and wincing slightly from the pain.  His cock immediately stiffens inside your cum-packed ass, fueled by the aphrodisiacs he's pouring into himself.  You firmly hold the pathetic male in place and rub his cheek while softly murmuring, \"<i>Good boy,</i>\" over and over again into his ear, all while milking his venom into his body.\n\n", false);
+			outputText("Without even waiting for him to finish, you go back to your cock-riding, the sensation of his trembling, drug-fueled erection tickling your prostate.  Inside your " + assholeDescript() + ", that wonderful, foreskin-clad member bastes in its own spooge, soaking up the sloppy spunk while you use it as your personal, living dildo.  You ", false);
+			if (!player.hasFuckableNipples()) outputText("pinch", false);
+			else outputText("finger", false);
+			outputText(" your " + nippleDescript(0) + "s, struggling to get off while the spider-boy cums again, this time without any warning at all.\n\n", false);
+			outputText("You finally let him loose, and he immediately slumps back, totally unconscious while his rock-hard cock continues to unload into you.  Riding the wet, drugged up fuck-stick, you get closer and closer to your own climax, the spider's dick continuing to pump every ounce of his seed from his body in a toxin-fueled, continuous orgasm.  Even after his jism is pooling on his waist, his cock keeps spasming wildly in your " + assholeDescript() + ".  The warm blooms of his seed fade away, but he keeps coming, rocking weakly underneath you.\n\n", false);
+			outputText("At last, your orgasm arrives in a thunderous wave, crashing over you to make you shake and tremble, violently squeezing on his slippery foreskin and forcing out thick dollops of man-cream from your anus.  Shuddering wildly, you bump and grind unthinkingly, until your strength completely vanishes and you slump down atop the unconscious spider.\n\n", false);
+			outputText("It takes some time to regain your strength with all the orgasmic aftershocks rolling through your " + assholeDescript() + ".  Once you've mastered yourself, you climb off your conquest and get dressed, ", false);
+			if (player.cor < 33) outputText("taking the time to clean the dripping spunk from your body.", false);
+			else if (player.cor < 66) outputText("casually wiping away the worst of the dripping spunk.", false);
+			else outputText("paying no heed to the thick flows of spunk that drip down your " + player.legs() + ".", false);
+			player.slimeFeed();
 			player.orgasm();
 			cleanupAfterCombat();
 		}
