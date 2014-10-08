@@ -33,6 +33,8 @@ package classes.Scenes.Monsters
 			var feeder:Function =null;
 			var nipFuck:Function =null;
 			var bikiniTits:Function =null;
+			var assRape:Function =null;
+			assRape = rapeImpWithAss;
 			if(player.hasVagina() && player.biggestTitSize() >= 4 && player.armor is LustyMaidensArmor) bikiniTits = (player.armor as LustyMaidensArmor).lustyMaidenPaizuri;
 			if(player.hasFuckableNipples() && player.lust >= 33) nipFuck = noogaisNippleRape;
 			if(player.findStatusAffect(StatusAffects.Feeder) >= 0) feeder = areImpsLactoseIntolerant;
@@ -68,6 +70,7 @@ package classes.Scenes.Monsters
 				addButton(2,"NippleFuck",nipFuck);
 				addButton(3,"Breastfeed",feeder);
 				addButton(4,"B.Titfuck",bikiniTits);
+				addButton(5,"RideWithAss",assrape);
 				if(eggDump > 0) addButton(8,"Oviposit",putBeeEggsInAnImpYouMonster);
 				addButton(9,"Leave",cleanupAfterCombat);
 				//choices("Male Rape",maleRape,"Female Rape",femaleRape,"NippleFuck",nipFuck,"Breastfeed",feeder,"B.Titfuck",bikiniTits,"",0,"",0,"",0,"",0,"Leave",cleanupAfterCombat);
@@ -1888,6 +1891,26 @@ package classes.Scenes.Monsters
 			player.orgasm();
 			dynStats("sen", -1);
 			player.dumpEggs();
+			cleanupAfterCombat();
+		}
+		
+		private function rapeImpWithAss():void {
+			outputText("", true);
+			player.slimeFeed();
+			outputText("You gather yourself after the fight, and can't help but notice the tasty-looking rod poking out around the little  demon's loincloth. Your cum-hungry " + assholeDescript() + " twitches in anticipation, aching to feel the nubs of it's shaft massaging your insides. His eyes follow you as you slowly circle him like a vulture, a shrill yelp escaping his throat as you suddenly pounce and push his legs open, hungrily eyeing his member. You're confident that the generously textured, ribbed, and bumped shaft will ensure a fun ride.", false);
+			outputText(" You shed your " + player.armorName+ ", eunthusiastically bumping and grinding against the mewling demon beneath you. He squirms and wriggles under your body, the creature not accomplishing much besides making you hotter. Just as you're really getting into it, you feel sharp claws dig deep and rake down your back, wincing as blood trickles down your side. That little shit.", false);
+				outputText("  You lift the imp off of the ground, wondering how to get back at him. Your eyes trail down to his little red ass, cracking a glasgow grin as you work out a fitting punishment. You shove it to the ground and remove one of his sandals. You look it over, concluding that the smooth, wooden imp-shoe would be perfect for your intended purpose. Partially lifting him up by his ankles, you run the dry surface across his ass cheeks and smile as he whines.", false);
+			outputText("  You happily tug and pinch on your erect nipples, adding to your pleasure and nearly driving yourself to orgasm.", false);
+			outputText("Without warning, you bring the sandal down on the little demon's ass with a satisfying \"slap\" that makes him wince and squeal. Twenty sharp, stinging slaps later has the screeching creature's ass damn near purple. Satisfied at getting back at him for drawing blood, you release his ankles and focus your mind back on what you had approached him for in the first place. You grab his body roughly and wrench him out of the fetal position, gathering up the pre-cum oozing from his cock and using it to lube your awaiting entrance. Wasting no time, you hastily plug his " + eCockDescript(0) + " deep into your " + assholeDescript() + ". You writhe and moan, the feeling of his hot, textured shaft making you feel full and warm.", false);
+			player.buttChange(monster.cockArea(0),true);
+                        outputText("  Your hands free, you decide to stimulate the creature pinned beneath you, running your hands over his body and effortlessly finding the spots that make him pant just a little harder. You wet your fingers with saliva, massaging your thumbs into it's peaked nipples and caressing its arms, which it seems to like.", false);
+			outputText("  As you begin to quicken your pace in riding his " + eCockDescript(0) + ", the imp's tongue lolls out of it's mouth and its eyes roll back as his body tenses hard. Your screams blend as he fills you to the brim with tainted warmth, your ass clenching rythmically as wonderful sensations pour through your body.", false);
+			if(player.hasCock()) outputText("\n\nAs much as you would love to continue the pleasure you can't last any longer.  You howl in intense pleasure and cum.  Your [balls] tighten against your body, and empty their contents. Your " + cockDescript(x) + " pulses and spasms, releasing wave and wave of semen.  The pleasure is intense, and almost painful as your cum.");
+			if(player.hasVagina()) outputText("\n\nYour " + vaginaDescript(0) + " tenses up tightly, spasming, desperate to be filled.  After a moment your girl juice begins to soak your inner thighs.  Your legs begin to tremble from the intensity of it all, and you question if you'll be able to make it back to your camp after this.");
+			outputText("\n\nHe wheezes as you collapse onto him, his softening " + eCockDescript(0) + " still lodged deep inside your body. You sigh in utter relief, the afterglow making your loins feel warm and tingly. Muffled cries come from under you, the imp crushed under your weight. With a start, you roll off of him and slide the sandal back on his clawed feet, feeling somewhat bad that you had essentially raped and beat the poor thing. In return, you decide not to raid whatever is in his satchel as you head back to camp.", false);
+			player.buttChange(monster.cockArea(0),true,true,false);
+			player.orgasm();
+			dynStats("sen", 2, "cor", 1);
 			cleanupAfterCombat();
 		}
 	}
