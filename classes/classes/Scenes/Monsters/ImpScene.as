@@ -62,7 +62,7 @@ package classes.Scenes.Monsters
 			}
 			var eggDump:Boolean = false;
 			if(player.canOvipositBee()) eggDump = true;
-			if(nipFuck==null && femaleRape==null && maleRape==null && feeder==null && bikiniTits==null && !eggDump) cleanupAfterCombat();
+			if(nipFuck==null && femaleRape==null && maleRape==null && feeder==null && bikiniTits==null && assRape==null && !eggDump) cleanupAfterCombat();
 			else {
 				menu();
 				addButton(0,"Male Fuck",maleRape);
@@ -70,7 +70,7 @@ package classes.Scenes.Monsters
 				addButton(2,"NippleFuck",nipFuck);
 				addButton(3,"Breastfeed",feeder);
 				addButton(4,"B.Titfuck",bikiniTits);
-				addButton(5,"RideWithAss",assrape);
+				addButton(5,"RideWithAss",assRape);
 				if(eggDump > 0) addButton(8,"Oviposit",putBeeEggsInAnImpYouMonster);
 				addButton(9,"Leave",cleanupAfterCombat);
 				//choices("Male Rape",maleRape,"Female Rape",femaleRape,"NippleFuck",nipFuck,"Breastfeed",feeder,"B.Titfuck",bikiniTits,"",0,"",0,"",0,"",0,"Leave",cleanupAfterCombat);
