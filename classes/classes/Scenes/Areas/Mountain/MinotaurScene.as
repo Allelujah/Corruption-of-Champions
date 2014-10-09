@@ -507,23 +507,33 @@ public function getRapedByMinotaur(autoRape:Boolean = false):void {
 	//{CHECK: If female or herm PC with big butt and vagina too small to fit minotaur cock, use this}		
 	if (!autoRape)
 	{
-		if(rand(2) == 0 && player.buttRating >= 15 && player.vaginalCapacity() < monster.biggestCockArea() && player.tone < 60) {
+		if(rand(4) == 0 && player.buttRating >= 15 && player.vaginalCapacity() < monster.biggestCockArea() && player.tone < 60) {
 			getMinoHawtDawged();
 			return;
 		}
 		//Oral rape chance
-		if(rand(2) == 0 && player.lowerBody != LOWER_BODY_TYPE_CENTAUR) {
+		if(rand(4) == 0 && player.lowerBody != LOWER_BODY_TYPE_CENTAUR) {
 			getOralRapedByMinotaur();
 			return;
 		}
 		//corruption 30-80 variant
-		if(rand(2) == 0 && player.cor >= 30 && player.cor < 80) {
+		if(rand(4) == 1 && player.cor >= 30 && player.cor < 80 && player.lowerBody != LOWER_BODY_TYPE_CENTAUR) {
 			getMinoRaepCor();
 			return;
 		}
 		//corruption 30-80 variant
-		if(rand(2) == 0 && player.cor >= 80) {
+		if(rand(4) == 1 && player.cor >= 80 && player.lowerBody != LOWER_BODY_TYPE_CENTAUR) {
 			getMinoRaepHCor();
+			return;
+		}
+		//not enough corruption gives rimjob variant
+		if(rand(4) == 1 && player.cor > 30 && player.lowerBody != LOWER_BODY_TYPE_CENTAUR) {
+			getMinoLickFuck();
+			return;
+		}
+		//Rimjob chance
+		if(rand(4) == 2 && player.lowerBody != LOWER_BODY_TYPE_CENTAUR) {
+			getMinoLickFuck();
 			return;
 		}
 	}
